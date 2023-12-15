@@ -9,9 +9,7 @@
   <span>
     <%= link_to book.body, book_path(book.id) %>
   </span>
+  
+  <%= link_to "Destroy", destroy_book_path(book.id), method: :delete, "date-confirm" => "Are you sure?" %>
 
 <% end %>
-
-<%= link_to "Show", books_path(@book) %>
-
-<%= link_to "Edit", edit_book_path(book.id) %>

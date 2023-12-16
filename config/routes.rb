@@ -6,8 +6,7 @@ Rails.application.routes.draw do
   # patch 'books/:id' => 'books#update', as: 'update_book'
   # delete 'books/:id' => 'books#destroy', as: 'destroy_book'
 
-  get '/top' => 'homes#top'
-  root to: 'home#top'
+  root to: 'homes#top'
   resources :books
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
